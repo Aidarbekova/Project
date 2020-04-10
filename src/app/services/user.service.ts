@@ -1,27 +1,27 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { User } from '../interfaces/User'
 import { Observable } from 'rxjs';
-import { Book } from '../interfaces/Book'
-import { Order } from '../interfaces/Order'
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class BookService {
+export class UserService {
   constructor(private http: HttpClient) { }
 
-  private url = 'assets/books.json'
+  private url = ''
   private httpHeaders = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'
     })
   }
 
-  getBooks(): Observable<Book[]> {
-    return this.http.get<Book[]>(this.url)
+  Login(user: User): Observable<User> {
+    return this.http.post<User>(this.url+'login', user, this.httpHeaders)
   }
 
-  orderBook(order: Order): Observable<Order> {
-    return this.http.post<Order>(this.url, order, this.httpHeaders)
+  Register(user: User): Observable<User> {
+    return this.http.post<User>(this.url+'register', user, this.httpHeaders)
   }
 }

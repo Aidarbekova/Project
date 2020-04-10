@@ -7,7 +7,10 @@ import { MainComponent } from './components/main/main.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpClientModule} from '@angular/common/http';
-import { GenreDetailedComponent } from './components/genre-detailed/genre-detailed.component'
+import { GenreDetailedComponent } from './components/genre-detailed/genre-detailed.component';
+import { BookComponent } from './components/book/book.component'
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component'
 
 @NgModule({
   declarations: [
@@ -15,12 +18,15 @@ import { GenreDetailedComponent } from './components/genre-detailed/genre-detail
     MainComponent,
     SidebarComponent,
     NavbarComponent,
-    GenreDetailedComponent
+    GenreDetailedComponent,
+    BookComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
