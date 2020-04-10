@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "genre": 3,
+        "name": "Master and Margueritte",
+        "author": "M.A. Bulgakov",
+        "description": "Great Russian Romance",
+        "image": "https://cdn.f.kz/prod/296/295466_550.jpg",
+        "price": 989
+    },
+    {
+        "id": 2,
+        "genre": 3,
+        "name": "Master and Margueritte",
+        "author": "M.A. Bulgakov",
+        "description": "Great Russian Romance",
+        "image": "https://cdn.f.kz/prod/296/295466_550.jpg",
+        "price": 989
+    },{
+        "id": 3,
+        "genre": 1,
+        "name": "Master and Margueritte",
+        "author": "M.A. Bulgakov",
+        "description": "Great Russian Romance",
+        "image": "https://cdn.f.kz/prod/296/295466_550.jpg",
+        "price": 989
+    },{
+        "id": 4,
+        "genre": 2,
+        "name": "Master and Margueritte",
+        "author": "M.A. Bulgakov",
+        "description": "Great Russian Romance",
+        "image": "https://cdn.f.kz/prod/296/295466_550.jpg",
+        "price": 989
+    }
+]

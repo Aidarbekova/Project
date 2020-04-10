@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Comedy"
+    },
+    {
+        "id": 2,
+        "name": "Romance"
+    },
+    {
+        "id": 3,
+        "name": "Russian Classique"
+    },
+    {
+        "id": 4,
+        "name": "Detectives"
+    },
+    {
+        "id": 5,
+        "name": "Drama"
+    },
+    {
+        "id": 6,
+        "name": "Teenage Fantasy"
+    }
+]
