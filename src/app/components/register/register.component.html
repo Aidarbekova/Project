@@ -1,0 +1,8 @@
+<div class="regist">
+    <h2>Register</h2>
+
+    <input type="email" name="email" placeholder="email" [(ngModel)]="user.email">
+    <input type="password" name="password" placeholder="password" [(ngModel)]="user.password">
+    <input type="password" name="password2" placeholder="confirm password" [(ngModel)]="user.password2">
+    <button (click)="onSubmit()">Зарегистрироваться</button>
+</div>

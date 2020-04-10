@@ -1,0 +1,11 @@
+<div class="admin">
+    <h2>Create a book</h2>
+
+    <input type="text" name="name" placeholder="book name" [(ngModel)]="book.name">
+    <input type="text" name="author" placeholder="book author" [(ngModel)]="book.author">
+    <input type="text" name="genre" placeholder="book genre" [(ngModel)]="book.genre">
+    <input type="text" name="description" placeholder="book description" [(ngModel)]="book.description">
+    <input type="text" name="price" placeholder="book price" [(ngModel)]="book.price">
+    <input type="text" name="image" placeholder="book image url" [(ngModel)]="book.image">
+    <button (click)="onSubmit()">Добавить новую книгу</button>
+</div>

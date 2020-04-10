@@ -24,4 +24,8 @@ export class BookService {
   orderBook(order: Order): Observable<Order> {
     return this.http.post<Order>(this.url, order, this.httpHeaders)
   }
+
+  create(book: Book): Observable<Book> {
+    return this.http.post<Book>(this.url, book, this.httpHeaders)
+  }
 }
