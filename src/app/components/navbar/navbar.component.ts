@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+  logged: boolean = false
   constructor() { }
 
   ngOnInit(): void {
+    let isLogged = localStorage.getItem('token')
+    if(isLogged) this.logged = true
+  }
+
+  logout() {
+    localStorage.clear()
+    this.logged = false
   }
 
 }
