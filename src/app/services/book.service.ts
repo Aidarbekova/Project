@@ -41,4 +41,12 @@ export class BookService {
   updateOrder(order): Observable<any> {
     return this.http.put(this.url + 'order/' + order.id + '/', order, this.httpHeaders)
   }
+
+  orderBook(order: Order): Observable<Order> {
+    return this.http.post<Order>(this.url, order, this.httpHeaders)
+  }
+
+  create(book: Book): Observable<Book> {
+    return this.http.post<Book>(this.url, book, this.httpHeaders)
+  }
 }
